@@ -1,0 +1,10 @@
+{
+    "entityLocation": "Entities",
+    "clientLocation": "Clients",
+    "filesToRename": [
+        {
+            "originialName": "template-csharp-netstandard.csproj",
+            "newName": "%%NAME%%.csproj"
+        }
+    ]
+}
