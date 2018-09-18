@@ -3,7 +3,7 @@
     "clientLocation": "Clients",
     "filesToRename": [
         {
-            "originialName": "template-csharp-netstandard.csproj",
+            "originalName": "template-csharp-netstandard.csproj",
             "newName": "%%NAME%%.csproj"
         }
     ]
