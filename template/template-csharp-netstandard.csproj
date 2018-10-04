@@ -4,7 +4,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>%%NAME%%</RootNamespace>
     <PackageId>%%NAME%%</PackageId>
-    <Version>%%VERSION%%</Version>
+    <Version>0.0.1</Version>
     <Authors>Jason Miesionczek</Authors>
     <Company>Test Company</Company>
   </PropertyGroup>

@@ -1,6 +1,8 @@
 {
     "entityLocation": "Entities",
-    "clientLocation": "Clients",
+    "clientLocation": "API",
+    "templateLocation": "template",
+    "pluginLocation": "plugin",
     "filesToRename": [
         {
             "originalName": "template-csharp-netstandard.csproj",
