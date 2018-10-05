@@ -28,7 +28,7 @@ public class RestSharpRenderPlugin : IRenderPlugin
         foreach (Match m in matches)
         {
             var parameterName = m.Value.Replace("{", "").Replace("}", "");
-            var matchingArg = args.Where(a => a == parameterName).FirstOrDefault() 
+            var matchingArg = args.FirstOrDefault(a => a == parameterName) 
                 ?? throw new Exception("No matching argument for URL parameter: " + parameterName);
             
             usedArgs.Add(matchingArg);
@@ -44,7 +44,6 @@ public class RestSharpRenderPlugin : IRenderPlugin
     public List<string> RenderAbstractFunction(string url, string prefix, string returnType, string method, List<string> args)
     {
         var output = new List<string>();
-        output.Add("// this came from plugin");
         output.Add($"var request = new RestRequest(\"{prefix}{url}\", Method.{method});");
         output.AddRange(RenderUrlSegment(url, args));
         output.Add($"var response = Client.Execute<{returnType}>(request);");
